@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uttara Ranjit - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: "Times New Roman", serif;
+            font-family: "Eagle Lake", serif; /* Updated font */
             margin: 0;
             padding: 0;
-            background-color: rgb(60, 4, 4); /* Black Background */
+            background-color: rgb(60, 4, 4); /* Dark Red Background */
             color: white;
-            text-align: left;
-            padding-left: 10%;
+            text-align: center;
             padding-top: 5%;
         }
 
@@ -29,11 +29,28 @@
             font-size: 72px;
         }
 
+        /* Profile Picture Styling */
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .profile-picture {
+            width: 150px; /* Adjust size as needed */
+            height: 150px;
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
         /* About Section */
         .about-text {
             font-size: 22px;
             max-width: 600px;
             line-height: 1.5;
+            margin: 20px auto;
         }
 
         .about-text em {
@@ -53,7 +70,7 @@
         .menu a {
             color: white;
             text-decoration: none;
-            margin-right: 20px;
+            margin: 0 15px;
         }
 
         .menu a:hover {
@@ -66,17 +83,33 @@
             margin-top: 50px;
             opacity: 0.7;
         }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <h1>Hi, my name is <span>Uttara Ranjit.</span></h1>
-    
+
+    <!-- Profile Picture Section -->
+    <div class="profile-container">
+        <img src="images/5f92df7d-8a92-4ca0-875e-9b5584f1db69.JPG" alt="Uttara Ranjit's Picture" class="profile-picture">
+    </div>
+
+    <!-- About Section -->
     <p class="about-text">
         I'm a passionate designer studying at Parsons School of Design.  
-        Has skills in creating designs using Unity, C#, Python, and Adobe.  
+        I have skills in creating designs using Unity, C#, Python, Javascript, and Adobe.  
     </p>
 
+    <!-- Navigation Menu -->
     <div class="menu">
         <a href="index.html">Home</a>
         <a href="p5js-projects.html">P5.js Projects</a>
@@ -85,11 +118,11 @@
         <a href="other-work.html">Other Work</a>
     </div>
 
+    <!-- Contact Info -->
     <div class="contact">
         <p>UTTARA RANJIT</p>
         <p>uttararanjit04@gmail.com</p>
-        <a href="https://www.linkedin.com/in/uttara-ranjit-981bb330b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrnnPkqSDSXOQ5e6p%2FFFhBw%3D%3D">Linkedin profile</a>
-
+        <a href="https://www.linkedin.com/in/uttara-ranjit-981bb330b">LinkedIn Profile</a>
     </div>
 
 </body>
