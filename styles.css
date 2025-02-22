@@ -79,7 +79,7 @@ body {
     padding: 20px;
 }
 
-/* Video Section (Typography Assignment Page) */
+/* Video Section (Other Work Page & Typography Assignment Page) */
 .video-section {
     width: 100%;
     height: 70vh; /* Adjust video height */
@@ -211,11 +211,11 @@ body {
 
 /* Video Section (Smaller Video) */
 .video-section {
-    width: 100%;
-    height: 40vh; /* Reduced video height to make it smaller */
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
     align-items: center;
+    width: 100%;
     background-color: #200020; /* Dark background to match theme */
     padding: 20px;
     margin-top: 20px;
@@ -226,4 +226,11 @@ body {
     height: auto;
     max-width: 800px; /* Max width to prevent it from being too large */
     border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #200020; /* Dark background to match theme */
+    color: #ce8fcf; /* Light purple to match header theme */
 }
